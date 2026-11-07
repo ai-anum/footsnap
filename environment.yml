@@ -1,0 +1,15 @@
+# FootSnap server environment (Windows, Linux or macOS)
+#   conda env create -f environment.yml      (setup_windows.bat does this and adds PyTorch)
+name: footsnap
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - numpy>=1.24
+  - scipy>=1.10
+  - pillow>=10.0
+  - flask>=3.0
+  - pip:
+      - opencv-python>=4.8
+      - pillow-heif>=0.16
